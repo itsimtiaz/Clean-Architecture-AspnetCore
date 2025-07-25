@@ -1,0 +1,22 @@
+@BaseURL = https://localhost:7286
+
+# Get User Welcome
+GET {{BaseURL}}/users HTTP/1.1
+
+###
+
+# Post User
+POST {{BaseURL}}/users
+Content-Type: application/json
+
+{
+    "Id": 0,
+    "Name" : "Imtiaz final",
+    "Age" : 30
+}
+###
+
+# Get User
+GET {{BaseURL}}/users/50 HTTP/1.1
+
+###
